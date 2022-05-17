@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_ISTB_18_1_Romanov_Lab2DataSet2" targetNamespace="http://tempuri.org/_ISTB_18_1_Romanov_Lab2DataSet2.xsd" xmlns:mstns="http://tempuri.org/_ISTB_18_1_Romanov_Lab2DataSet2.xsd" xmlns="http://tempuri.org/_ISTB_18_1_Romanov_Lab2DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISTB_18_1_Romanov_Lab2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISTB_18_1_Romanov_Lab2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.ISTB_18_1_Romanov_Lab2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Mod_ViewTableAdapter" GeneratorDataComponentClassName="Mod_ViewTableAdapter" Name="Mod_View" UserDataComponentName="Mod_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ISTB_18_1_Romanov_Lab2ConnectionString (Settings)" DbObjectName="[ISTB-18-1_Romanov_Lab2].dbo.Mod_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер модификации], [Название модификации], [Время изготовления], [Тип модификации], [Номер станка], [Номер детали] FROM dbo.Mod_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер модификации" DataSetColumn="Номер модификации" />
+              <Mapping SourceColumn="Название модификации" DataSetColumn="Название модификации" />
+              <Mapping SourceColumn="Время изготовления" DataSetColumn="Время изготовления" />
+              <Mapping SourceColumn="Тип модификации" DataSetColumn="Тип модификации" />
+              <Mapping SourceColumn="Номер станка" DataSetColumn="Номер станка" />
+              <Mapping SourceColumn="Номер детали" DataSetColumn="Номер детали" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_ISTB_18_1_Romanov_Lab2DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_ISTB_18_1_Romanov_Lab2DataSet2" msprop:Generator_UserDSName="_ISTB_18_1_Romanov_Lab2DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mod_View" msprop:Generator_TableClassName="Mod_ViewDataTable" msprop:Generator_TableVarName="tableMod_View" msprop:Generator_TablePropName="Mod_View" msprop:Generator_RowDeletingName="Mod_ViewRowDeleting" msprop:Generator_RowChangingName="Mod_ViewRowChanging" msprop:Generator_RowEvHandlerName="Mod_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Mod_ViewRowDeleted" msprop:Generator_UserTableName="Mod_View" msprop:Generator_RowChangedName="Mod_ViewRowChanged" msprop:Generator_RowEvArgName="Mod_ViewRowChangeEvent" msprop:Generator_RowClassName="Mod_ViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_модификации" msprop:Generator_ColumnVarNameInTable="columnНомер_модификации" msprop:Generator_ColumnPropNameInRow="Номер_модификации" msprop:Generator_ColumnPropNameInTable="Номер_модификацииColumn" msprop:Generator_UserColumnName="Номер модификации" type="xs:short" />
+              <xs:element name="Название_x0020_модификации" msprop:Generator_ColumnVarNameInTable="columnНазвание_модификации" msprop:Generator_ColumnPropNameInRow="Название_модификации" msprop:Generator_ColumnPropNameInTable="Название_модификацииColumn" msprop:Generator_UserColumnName="Название модификации">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Время_x0020_изготовления" msprop:Generator_ColumnVarNameInTable="columnВремя_изготовления" msprop:Generator_ColumnPropNameInRow="Время_изготовления" msprop:Generator_ColumnPropNameInTable="Время_изготовленияColumn" msprop:Generator_UserColumnName="Время изготовления" type="xs:double" />
+              <xs:element name="Тип_x0020_модификации" msprop:Generator_ColumnVarNameInTable="columnТип_модификации" msprop:Generator_ColumnPropNameInRow="Тип_модификации" msprop:Generator_ColumnPropNameInTable="Тип_модификацииColumn" msprop:Generator_UserColumnName="Тип модификации">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_станка" msprop:Generator_ColumnVarNameInTable="columnНомер_станка" msprop:Generator_ColumnPropNameInRow="Номер_станка" msprop:Generator_ColumnPropNameInTable="Номер_станкаColumn" msprop:Generator_UserColumnName="Номер станка" type="xs:short" minOccurs="0" />
+              <xs:element name="Номер_x0020_детали" msprop:Generator_ColumnVarNameInTable="columnНомер_детали" msprop:Generator_ColumnPropNameInRow="Номер_детали" msprop:Generator_ColumnPropNameInTable="Номер_деталиColumn" msprop:Generator_UserColumnName="Номер детали" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Mod_View" />
+      <xs:field xpath="mstns:Номер_x0020_модификации" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bench_s" msprop:Generator_TableClassName="Bench_sDataTable" msprop:Generator_TableVarName="tableBench_s" msprop:Generator_TablePropName="Bench_s" msprop:Generator_RowDeletingName="Bench_sRowDeleting" msprop:Generator_RowChangingName="Bench_sRowChanging" msprop:Generator_RowEvHandlerName="Bench_sRowChangeEventHandler" msprop:Generator_RowDeletedName="Bench_sRowDeleted" msprop:Generator_UserTableName="Bench_s" msprop:Generator_RowChangedName="Bench_sRowChanged" msprop:Generator_RowEvArgName="Bench_sRowChangeEvent" msprop:Generator_RowClassName="Bench_sRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_модификации" msprop:Generator_ColumnVarNameInTable="columnНомер_модификации" msprop:Generator_ColumnPropNameInRow="Номер_модификации" msprop:Generator_ColumnPropNameInTable="Номер_модификацииColumn" msprop:Generator_UserColumnName="Номер модификации" type="xs:short" />
+              <xs:element name="Вид_x0020_работы" msprop:Generator_ColumnVarNameInTable="columnВид_работы" msprop:Generator_ColumnPropNameInRow="Вид_работы" msprop:Generator_ColumnPropNameInTable="Вид_работыColumn" msprop:Generator_UserColumnName="Вид работы">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Кол-во_x0020_произвед._x0020_мод." msprop:Generator_ColumnVarNameInTable="_columnКол_во_произвед__мод_" msprop:Generator_ColumnPropNameInRow="_Кол_во_произвед__мод_" msprop:Generator_ColumnPropNameInTable="_Кол_во_произвед__мод_Column" msprop:Generator_UserColumnName="Кол-во произвед. мод." type="xs:short" />
+              <xs:element name="Название_x0020_модификации" msprop:Generator_ColumnVarNameInTable="columnНазвание_модификации" msprop:Generator_ColumnPropNameInRow="Название_модификации" msprop:Generator_ColumnPropNameInTable="Название_модификацииColumn" msprop:Generator_UserColumnName="Название модификации">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Bench_s" />
+      <xs:field xpath="mstns:Номер_x0020_модификации" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

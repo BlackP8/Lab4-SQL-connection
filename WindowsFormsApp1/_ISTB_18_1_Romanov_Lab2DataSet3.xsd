@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="_ISTB_18_1_Romanov_Lab2DataSet3" targetNamespace="http://tempuri.org/_ISTB_18_1_Romanov_Lab2DataSet3.xsd" xmlns:mstns="http://tempuri.org/_ISTB_18_1_Romanov_Lab2DataSet3.xsd" xmlns="http://tempuri.org/_ISTB_18_1_Romanov_Lab2DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISTB_18_1_Romanov_Lab2ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISTB_18_1_Romanov_Lab2ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.ISTB_18_1_Romanov_Lab2ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Bench_ViewTableAdapter" GeneratorDataComponentClassName="Bench_ViewTableAdapter" Name="Bench_View" UserDataComponentName="Bench_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ISTB_18_1_Romanov_Lab2ConnectionString (Settings)" DbObjectName="[ISTB-18-1_Romanov_Lab2].dbo.Bench_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Номер станка] FROM dbo.Bench_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Номер станка" DataSetColumn="Номер станка" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="_ISTB_18_1_Romanov_Lab2DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_ISTB_18_1_Romanov_Lab2DataSet3" msprop:Generator_UserDSName="_ISTB_18_1_Romanov_Lab2DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Bench_View" msprop:Generator_TableClassName="Bench_ViewDataTable" msprop:Generator_TableVarName="tableBench_View" msprop:Generator_TablePropName="Bench_View" msprop:Generator_RowDeletingName="Bench_ViewRowDeleting" msprop:Generator_RowChangingName="Bench_ViewRowChanging" msprop:Generator_RowEvHandlerName="Bench_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Bench_ViewRowDeleted" msprop:Generator_UserTableName="Bench_View" msprop:Generator_RowChangedName="Bench_ViewRowChanged" msprop:Generator_RowEvArgName="Bench_ViewRowChangeEvent" msprop:Generator_RowClassName="Bench_ViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Номер_x0020_станка" msprop:Generator_ColumnVarNameInTable="columnНомер_станка" msprop:Generator_ColumnPropNameInRow="Номер_станка" msprop:Generator_ColumnPropNameInTable="Номер_станкаColumn" msprop:Generator_UserColumnName="Номер станка" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Bench_View" />
+      <xs:field xpath="mstns:Номер_x0020_станка" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{314AA8A6-B0F0-47C4-8233-0045CC6173DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonForm.Designer.cs">
+      <DependentUpon>CommonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail.Designer.cs">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gilds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gilds.Designer.cs">
+      <DependentUpon>Gilds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifications.Designer.cs">
+      <DependentUpon>Modifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_ISTB_18_1_Romanov_Lab2DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet8.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CommonForm.resx">
+      <DependentUpon>CommonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail.resx">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gilds.resx">
+      <DependentUpon>Gilds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifications.resx">
+      <DependentUpon>Modifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet1.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet1.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet2.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet2.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet3.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet3.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet4.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet4.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet6.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet6.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet7.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet7.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet8.xsc">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_ISTB_18_1_Romanov_Lab2DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_ISTB_18_1_Romanov_Lab2DataSet8.xss">
+      <DependentUpon>_ISTB_18_1_Romanov_Lab2DataSet8.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{EF53050B-882E-4776-B643-EDA472E8E3F2}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
